@@ -2,6 +2,7 @@ import Image from "next/image";
 import portrait from "@/public/pavan-lankalapalli.jpg";
 import {
   agentCapabilities,
+  agentCaseStudy,
   aiExperience,
   contact,
   experience,
@@ -33,7 +34,7 @@ export default function Home() {
     "@type": "Person",
     name: "Pavan Sai Lankalapalli",
     url: "https://pavansae99.github.io/pavan-portfolio/",
-    jobTitle: "Senior Software Engineer at Google",
+    jobTitle: "Senior Software Engineer at HCLTech",
     email: `mailto:${contact.email}`,
     sameAs: [contact.github, contact.linkedin],
     knowsAbout: [
@@ -69,7 +70,7 @@ export default function Home() {
               Open to meaningful challenges
             </div>
             <span className="hidden font-mono text-[11px] uppercase tracking-[0.18em] text-ink/45 sm:block">
-              Google · Senior Software Engineer
+              HCLTech · Google Distributed Cloud Hosted
             </span>
           </div>
 
@@ -87,8 +88,8 @@ export default function Home() {
 
           <div className="relative grid items-end gap-8 border-t border-ink/10 pt-7 md:grid-cols-[1fr_auto]">
             <p className="max-w-2xl text-lg font-medium leading-7 tracking-[-0.015em] text-ink/75 sm:text-xl sm:leading-8">
-              I build secure distributed systems, cloud-native services, and
-              intelligent automation with Go and Python.
+              Building backend systems and agentic AI workflows that turn messy
+              processes into reliable automation.
             </p>
             <a
               href="#about"
@@ -144,11 +145,11 @@ export default function Home() {
                 <span className="highlight highlight-blue">agentic AI</span>.
               </p>
               <p className="mt-8 max-w-3xl text-base leading-8 text-ink/60 sm:text-lg">
-                Currently at Google, I build Go and Python services for secure
-                compliance automation across distributed Kubernetes
-                environments. My recent experience spans identity platforms,
-                recruiting systems, and legal technology, with a consistent focus
-                on reliable APIs, cloud infrastructure, and measurable performance.
+                Currently supporting Google Distributed Cloud Hosted via HCLTech,
+                I build Go and Python services for secure compliance automation
+                across distributed Kubernetes environments. My recent experience
+                spans identity platforms, recruiting systems, and legal technology,
+                with a consistent focus on reliable APIs and cloud infrastructure.
               </p>
             </Reveal>
 
@@ -156,7 +157,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-3">
                 {[
                   ["EXPERIENCE", "6+ years"],
-                  ["CURRENT", "Google"],
+                  ["CURRENT", "HCLTech"],
                   ["EDUCATION", "Northeastern"],
                 ].map(([label, value]) => (
                   <div key={label} className="bg-paper p-5 sm:p-6">
@@ -226,7 +227,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Experience"
               title="From legal technology to cloud-scale infrastructure."
-              description="Selected experience from Bloomberg Law through my current work at Google."
+              description="Selected experience from Bloomberg Law through my current work at HCLTech supporting Google Distributed Cloud Hosted."
               light
             />
           </Reveal>
@@ -368,42 +369,155 @@ export default function Home() {
                   <p className="mt-1 font-semibold">AI Job Search Agent</p>
                 </div>
               </div>
-              <span className="rounded-full bg-paper px-4 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-ink/55">
-                Human in the loop
-              </span>
+              <div
+                aria-label="GitHub repository link placeholder"
+                className="flex items-center gap-3 rounded-full border border-dashed border-ink/20 bg-paper px-4 py-2 text-ink/55"
+              >
+                <Github className="size-4" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.12em]">
+                  Repository link · Coming soon
+                </span>
+              </div>
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-            <Reveal>
+          <Reveal className="mt-12">
+            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
               <p className="text-3xl font-semibold leading-tight tracking-[-0.04em] sm:text-4xl">
                 A focused agent that treats job search as a system, not a browser
                 tab marathon.
               </p>
-              <p className="mt-7 text-base leading-8 text-ink/60">
-                The agent coordinates discovery, semantic matching, company
-                research, and application preparation. Every consequential action
-                is reviewable, keeping automation useful without giving up human
-                judgment.
-              </p>
-              <div className="mt-9 flex flex-wrap gap-2">
-                {["Stateful graph", "Tool use", "RAG", "Evaluation", "Approval gates"].map(
-                  (tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-paper px-4 py-2 font-mono text-[10px] uppercase tracking-[0.08em]"
-                    >
-                      {tag}
+              <div>
+                <p className="text-base leading-8 text-ink/60">
+                  A stateful workflow coordinates discovery, semantic matching,
+                  company research, and application preparation while preserving
+                  human judgment at every consequential step.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {["Stateful graph", "Tool use", "RAG", "Evaluation", "Approval gates"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full bg-paper px-4 py-2 font-mono text-[10px] uppercase tracking-[0.08em]"
+                      >
+                        {tag}
+                      </span>
+                    ),
+                  )}
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="mt-12 grid gap-3 lg:grid-cols-3">
+            {agentCaseStudy.map((item, index) => (
+              <Reveal key={item.label} delay={index * 70}>
+                <article className="flex h-full min-h-64 flex-col rounded-3xl border border-line bg-paper p-6 sm:p-7">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink/40">
+                      {item.number}
                     </span>
-                  ),
-                )}
+                    <span className="size-2 rounded-full bg-orange" />
+                  </div>
+                  <div className="mt-auto">
+                    <h3 className="text-2xl font-semibold tracking-[-0.035em]">
+                      {item.label}
+                    </h3>
+                    <p className="mt-4 text-sm leading-7 text-ink/60">
+                      {item.text}
+                    </p>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="mt-12 grid gap-4 lg:grid-cols-2">
+            <Reveal>
+              <div className="overflow-hidden rounded-[2rem] border border-dashed border-ink/20 bg-paper p-4 sm:p-6">
+                <div className="rounded-2xl border border-line bg-white p-4 shadow-sm">
+                  <div className="flex items-center gap-2 border-b border-line pb-3">
+                    <span className="size-2 rounded-full bg-orange" />
+                    <span className="size-2 rounded-full bg-lime" />
+                    <span className="size-2 rounded-full bg-blue" />
+                    <span className="ml-2 font-mono text-[9px] uppercase tracking-[0.14em] text-ink/35">
+                      Agent dashboard
+                    </span>
+                  </div>
+                  <div className="mt-4 grid grid-cols-[0.65fr_1.35fr] gap-3">
+                    <div className="space-y-2">
+                      <div className="h-8 rounded-lg bg-ink/5" />
+                      <div className="h-8 rounded-lg bg-ink/5" />
+                      <div className="h-24 rounded-lg bg-lime/35" />
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="h-20 rounded-lg bg-blue/45" />
+                      <div className="h-20 rounded-lg bg-orange/45" />
+                      <div className="col-span-2 h-14 rounded-lg bg-ink/5" />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between gap-4 px-2 pb-1 pt-5">
+                  <div>
+                    <p className="font-semibold">Dashboard screenshot</p>
+                    <p className="mt-1 text-sm text-ink/45">
+                      Product interface placeholder
+                    </p>
+                  </div>
+                  <span className="rounded-full border border-ink/10 bg-white px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/40">
+                    Add image
+                  </span>
+                </div>
               </div>
             </Reveal>
 
-            <div className="grid gap-3 sm:grid-cols-2">
+            <Reveal delay={70}>
+              <div className="overflow-hidden rounded-[2rem] border border-dashed border-ink/20 bg-paper p-4 sm:p-6">
+                <div className="flex min-h-52 items-center justify-center rounded-2xl border border-line bg-white p-5 shadow-sm">
+                  <div className="grid w-full grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-2">
+                    {["Role sources", "Agent graph", "Review queue"].map(
+                      (label, index) => (
+                        <div key={label} className="contents">
+                          <div
+                            className={`rounded-xl border p-3 text-center font-mono text-[9px] uppercase tracking-[0.1em] ${
+                              index === 1
+                                ? "border-lime bg-lime/35 text-ink"
+                                : "border-line bg-paper text-ink/55"
+                            }`}
+                          >
+                            {label}
+                          </div>
+                          {index < 2 ? (
+                            <span className="text-center text-ink/25">→</span>
+                          ) : null}
+                        </div>
+                      ),
+                    )}
+                  </div>
+                </div>
+                <div className="flex items-center justify-between gap-4 px-2 pb-1 pt-5">
+                  <div>
+                    <p className="font-semibold">Architecture diagram</p>
+                    <p className="mt-1 text-sm text-ink/45">
+                      System design placeholder
+                    </p>
+                  </div>
+                  <span className="rounded-full border border-ink/10 bg-white px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.12em] text-ink/40">
+                    Add diagram
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <div className="mt-12 border-t border-line pt-10">
+            <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.16em] text-ink/40">
+              Workflow
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {agentCapabilities.map((capability, index) => (
-                <Reveal key={capability.step} delay={index * 70}>
-                  <div className="flex h-full min-h-52 flex-col rounded-3xl border border-line bg-paper p-6 transition hover:border-ink/25 hover:bg-lime/25">
+                <Reveal key={capability.step} delay={index * 60}>
+                  <div className="flex h-full min-h-48 flex-col rounded-3xl border border-line bg-paper p-6 transition hover:border-ink/25 hover:bg-lime/25">
                     <span className="font-mono text-xs text-ink/40">
                       {capability.step}
                     </span>
@@ -479,10 +593,11 @@ export default function Home() {
                 </p>
               </div>
               <a
-                href={`mailto:${contact.email}?subject=Resume request for Pavan Sai Lankalapalli`}
+                href="./Pavan-Sai-Lankalapalli-Resume.docx"
+                download
                 className="group flex items-center gap-4 rounded-full bg-ink px-6 py-4 font-semibold text-white transition hover:bg-white hover:text-ink"
               >
-                Request resume
+                Download resume
                 <Download className="size-5 transition group-hover:translate-y-0.5" />
               </a>
             </div>

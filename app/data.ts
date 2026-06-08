@@ -44,11 +44,11 @@ export const skills = [
 export const experience = [
   {
     period: "APR 2025 — PRESENT",
-    company: "Google",
+    company: "HCLTech",
     role: "Senior Software Engineer",
-    focus: "Golang, Python & Cloud Infrastructure",
+    focus: "Google Distributed Cloud Hosted",
     summary:
-      "Building services for the Google Distributed Cloud Hosted compliance platform, with an emphasis on secure automation across multi-cluster Kubernetes environments.",
+      "Supporting Google Distributed Cloud Hosted through HCLTech, with an emphasis on secure compliance automation across multi-cluster Kubernetes environments.",
     highlights: [
       "Develop Go microservices and Python workflows for compliance evidence collection, policy evaluation, and OSCAL reporting.",
       "Engineer secure gRPC communication, RBAC, mTLS, and short-lived authentication for distributed services.",
@@ -146,6 +146,24 @@ export const agentCapabilities = [
     step: "04",
     title: "Act",
     text: "Creates tailored materials and a review-ready application queue.",
+  },
+];
+
+export const agentCaseStudy = [
+  {
+    number: "01",
+    label: "Problem",
+    text: "Job searches scatter role discovery, fit evaluation, company research, and application tracking across disconnected tools.",
+  },
+  {
+    number: "02",
+    label: "Solution",
+    text: "A human-in-the-loop agent normalizes listings, scores fit, gathers context, and prepares a review-ready application queue.",
+  },
+  {
+    number: "03",
+    label: "Impact",
+    text: "Transforms repetitive research into a consistent workflow, improves prioritization, and keeps consequential actions reviewable.",
   },
 ];
 
