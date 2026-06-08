@@ -157,8 +157,8 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-3">
                 {[
                   ["EXPERIENCE", "6+ years"],
-                  ["CURRENT", "HCLTech"],
-                  ["EDUCATION", "Northeastern"],
+                  ["CURRENT", "Google on behalf of HCLTech"],
+                  ["EDUCATION", "Northeastern university"],
                 ].map(([label, value]) => (
                   <div key={label} className="bg-paper p-5 sm:p-6">
                     <p className="font-mono text-[10px] tracking-[0.16em] text-ink/40">

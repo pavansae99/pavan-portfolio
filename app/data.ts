@@ -44,7 +44,7 @@ export const skills = [
 export const experience = [
   {
     period: "APR 2025 — PRESENT",
-    company: "HCLTech",
+    company: "Google on behalf of HCLTech",
     role: "Senior Software Engineer",
     focus: "Google Distributed Cloud Hosted",
     summary:
@@ -177,5 +177,5 @@ export const aiExperience = [
 export const contact = {
   email: "lankalapalli.pavansai@gmail.com",
   github: "https://github.com/pavansae99",
-  linkedin: "https://www.linkedin.com/in/pavansailankalapalli",
+  linkedin: "https://www.linkedin.com/in/pavan-sai-lankalapalli/",
 };
