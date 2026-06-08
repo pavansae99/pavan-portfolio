@@ -17,13 +17,7 @@ updates:
           - minor
           - patch
     ignore:
-      - dependency-name: next
-        update-types:
-          - version-update:semver-major
-      - dependency-name: eslint
-        update-types:
-          - version-update:semver-major
-      - dependency-name: "@types/node"
+      - dependency-name: "*"
         update-types:
           - version-update:semver-major
 
