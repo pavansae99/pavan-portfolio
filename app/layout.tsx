@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pavansae99.github.io/pavan-portfolio/"),
   title: "Pavan Sai Lankalapalli | Senior Software Engineer",
   description:
-    "Senior Software Engineer building resilient distributed systems, cloud-native platforms, and intelligent AI agents.",
+    "Senior Software Engineer at Google building secure distributed systems, cloud-native platforms, and intelligent automation.",
   keywords: [
     "Pavan Sai Lankalapalli",
     "Senior Software Engineer",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: "https://pavansae99.github.io/pavan-portfolio/",
     title: "Pavan Sai Lankalapalli | Senior Software Engineer",
     description:
-      "Senior Software Engineer specializing in distributed systems, cloud-native platforms, and Agentic AI.",
+      "Senior Software Engineer at Google specializing in distributed systems, cloud-native platforms, and Agentic AI.",
     siteName: "Pavan Sai Lankalapalli",
   },
   twitter: {

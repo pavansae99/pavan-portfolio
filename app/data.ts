@@ -43,30 +43,56 @@ export const skills = [
 
 export const experience = [
   {
-    period: "CURRENT",
+    period: "APR 2025 — PRESENT",
+    company: "Google",
     role: "Senior Software Engineer",
-    focus: "Cloud & Distributed Systems",
+    focus: "Golang, Python & Cloud Infrastructure",
     summary:
-      "Leading the design and delivery of cloud-native backend platforms, with a focus on service reliability, developer velocity, and systems that scale cleanly.",
+      "Building services for the Google Distributed Cloud Hosted compliance platform, with an emphasis on secure automation across multi-cluster Kubernetes environments.",
     highlights: [
-      "Architect distributed services and APIs in Go, Python, and Java.",
-      "Build Kubernetes-first platforms with automated delivery and observability.",
-      "Drive technical direction through design reviews, mentorship, and pragmatic standards.",
+      "Develop Go microservices and Python workflows for compliance evidence collection, policy evaluation, and OSCAL reporting.",
+      "Engineer secure gRPC communication, RBAC, mTLS, and short-lived authentication for distributed services.",
     ],
-    stack: ["Go", "Kubernetes", "AWS", "Kafka", "PostgreSQL"],
+    stack: ["Go", "Python", "Kubernetes", "gRPC", "GCP"],
   },
   {
-    period: "FOUNDATION",
-    role: "Software Engineer",
-    focus: "Backend Platforms & Automation",
+    period: "OCT 2024 — APR 2025",
+    company: "DigitalOcean",
+    role: "Senior Software Engineer",
+    focus: "Identity & Platform Services",
     summary:
-      "Built the backend foundations and automation workflows that turn complex business requirements into dependable, measurable software.",
+      "Developed identity and platform services focused on secure authentication, efficient service communication, and dependable cloud operations.",
     highlights: [
-      "Developed high-throughput microservices and asynchronous workflows.",
-      "Improved operational visibility with metrics, tracing, and structured logging.",
-      "Partnered across product and engineering to ship incremental, low-risk changes.",
+      "Built Go-based SSO and authentication services using gRPC, Protobuf, OAuth2, JWT, and role-based access control.",
+      "Created Python automation for identity lifecycle management, service diagnostics, and deployment validation.",
     ],
-    stack: ["Python", "Java", "Docker", "Redis", "CI/CD"],
+    stack: ["Go", "Python", "gRPC", "Kubernetes", "OAuth2"],
+  },
+  {
+    period: "MAR 2023 — SEP 2024",
+    company: "State Farm",
+    role: "Senior Backend Engineer",
+    focus: "Golang & Cloud Platforms",
+    summary:
+      "Designed backend services and data workflows for recruiting and enterprise platforms, combining API reliability with cloud-native delivery.",
+    highlights: [
+      "Built Go microservices and a background-check API that improved onboarding speed and access to recruiting results.",
+      "Developed Python data processing and PyTest automation while supporting Kubernetes and event-driven workloads.",
+    ],
+    stack: ["Go", "Python", "PostgreSQL", "Kafka", "Kubernetes"],
+  },
+  {
+    period: "JUN 2022 — JAN 2023",
+    company: "Bloomberg Law",
+    role: "Software Engineer",
+    focus: "Golang, Python & Java",
+    summary:
+      "Built scalable backend and data services for legal technology products, with a focus on high-volume processing, search, and secure APIs.",
+    highlights: [
+      "Created Go REST and RPC microservices for large PostgreSQL datasets and built FastAPI services for document metadata workflows.",
+      "Improved reliability through automated testing, JWT and SSO integrations, and production support across AWS-based systems.",
+    ],
+    stack: ["Go", "Python", "Java", "PostgreSQL", "AWS"],
   },
 ];
 
@@ -131,7 +157,7 @@ export const aiExperience = [
 ];
 
 export const contact = {
-  email: "pavansailankalapalli@gmail.com",
+  email: "lankalapalli.pavansai@gmail.com",
   github: "https://github.com/pavansae99",
   linkedin: "https://www.linkedin.com/in/pavansailankalapalli",
 };

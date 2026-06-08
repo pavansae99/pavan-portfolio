@@ -1,3 +1,5 @@
+import Image from "next/image";
+import portrait from "@/public/pavan-lankalapalli.jpg";
 import {
   agentCapabilities,
   aiExperience,
@@ -31,7 +33,7 @@ export default function Home() {
     "@type": "Person",
     name: "Pavan Sai Lankalapalli",
     url: "https://pavansae99.github.io/pavan-portfolio/",
-    jobTitle: "Senior Software Engineer",
+    jobTitle: "Senior Software Engineer at Google",
     email: `mailto:${contact.email}`,
     sameAs: [contact.github, contact.linkedin],
     knowsAbout: [
@@ -67,7 +69,7 @@ export default function Home() {
               Open to meaningful challenges
             </div>
             <span className="hidden font-mono text-[11px] uppercase tracking-[0.18em] text-ink/45 sm:block">
-              Chicago, IL · CST
+              Google · Senior Software Engineer
             </span>
           </div>
 
@@ -85,8 +87,8 @@ export default function Home() {
 
           <div className="relative grid items-end gap-8 border-t border-ink/10 pt-7 md:grid-cols-[1fr_auto]">
             <p className="max-w-2xl text-lg font-medium leading-7 tracking-[-0.015em] text-ink/75 sm:text-xl sm:leading-8">
-              I design resilient distributed systems and intelligent software
-              agents that turn complex problems into dependable products.
+              I build secure distributed systems, cloud-native services, and
+              intelligent automation with Go and Python.
             </p>
             <a
               href="#about"
@@ -105,48 +107,57 @@ export default function Home() {
         <Reveal>
           <SectionHeading
             eyebrow="About"
-            title="Engineering systems that are built to last."
+            title="Backend depth, cloud scale, practical execution."
           />
         </Reveal>
 
         <div className="mt-16 grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
-          <Reveal className="relative min-h-72 overflow-hidden rounded-[2rem] bg-ink p-8 text-white sm:min-h-96 sm:p-10">
-            <div className="absolute -right-16 -top-16 size-64 rounded-full bg-lime" />
-            <div className="absolute bottom-12 right-10 size-36 rounded-full border-[28px] border-orange" />
-            <div className="absolute bottom-0 left-0 h-1/2 w-full bg-gradient-to-t from-ink to-transparent" />
-            <div className="relative flex h-full flex-col justify-between">
-              <span className="font-mono text-xs uppercase tracking-[0.18em] text-white/55">
-                My operating principle
-              </span>
-              <blockquote className="max-w-md text-3xl font-semibold leading-tight tracking-[-0.035em] sm:text-4xl">
-                Make the complex understandable. Make the critical reliable.
-              </blockquote>
+          <Reveal className="relative min-h-[30rem] overflow-hidden rounded-[2rem] border border-ink/10 bg-white shadow-card">
+            <Image
+              src={portrait}
+              alt="Pavan Sai Lankalapalli"
+              fill
+              sizes="(max-width: 1024px) 100vw, 38vw"
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/75 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-7 text-white sm:p-9">
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-lime">
+                Pavan Sai Lankalapalli
+              </p>
+              <p className="mt-3 text-xl font-semibold tracking-[-0.025em]">
+                Senior Software Engineer
+              </p>
+              <p className="mt-1 text-sm text-white/55">
+                Backend systems · Cloud infrastructure · AI
+              </p>
             </div>
           </Reveal>
 
           <div className="flex flex-col justify-between gap-12">
             <Reveal>
               <p className="text-2xl font-medium leading-[1.45] tracking-[-0.025em] text-ink sm:text-3xl">
-                I&apos;m a senior software engineer specializing in{" "}
+                I&apos;m a senior software engineer with 6+ years of experience
+                specializing in{" "}
                 <span className="highlight highlight-lime">distributed systems</span>,
                 cloud-native platforms, and{" "}
                 <span className="highlight highlight-blue">agentic AI</span>.
               </p>
               <p className="mt-8 max-w-3xl text-base leading-8 text-ink/60 sm:text-lg">
-                My work sits at the intersection of deep backend engineering and
-                practical product thinking. I enjoy shaping ambiguous problems,
-                designing clear service boundaries, and building the operational
-                foundations that let teams move quickly without sacrificing
-                reliability.
+                Currently at Google, I build Go and Python services for secure
+                compliance automation across distributed Kubernetes
+                environments. My recent experience spans identity platforms,
+                recruiting systems, and legal technology, with a consistent focus
+                on reliable APIs, cloud infrastructure, and measurable performance.
               </p>
             </Reveal>
 
             <Reveal>
               <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-3">
                 {[
-                  ["CORE", "Backend"],
-                  ["SYSTEMS", "Distributed"],
-                  ["MINDSET", "Product-led"],
+                  ["EXPERIENCE", "6+ years"],
+                  ["CURRENT", "Google"],
+                  ["EDUCATION", "Northeastern"],
                 ].map(([label, value]) => (
                   <div key={label} className="bg-paper p-5 sm:p-6">
                     <p className="font-mono text-[10px] tracking-[0.16em] text-ink/40">
@@ -214,24 +225,27 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="Experience"
-              title="Building at the point where architecture meets reality."
-              description="A track record centered on backend platforms, distributed workloads, and the engineering practices that keep them healthy."
+              title="From legal technology to cloud-scale infrastructure."
+              description="Selected experience from Bloomberg Law through my current work at Google."
               light
             />
           </Reveal>
 
           <div className="mt-20 border-t border-white/15">
             {experience.map((item, index) => (
-              <Reveal key={item.focus} delay={index * 80}>
+              <Reveal key={item.company} delay={index * 80}>
                 <article className="grid gap-8 border-b border-white/15 py-10 lg:grid-cols-[0.3fr_0.7fr_1fr] lg:gap-12 lg:py-14">
                   <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-lime">
                     {item.period}
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold tracking-[-0.03em]">
-                      {item.role}
+                      {item.company}
                     </h3>
-                    <p className="mt-2 text-sm text-white/45">{item.focus}</p>
+                    <p className="mt-3 text-sm font-semibold text-white/75">
+                      {item.role}
+                    </p>
+                    <p className="mt-1 text-sm text-white/40">{item.focus}</p>
                   </div>
                   <div>
                     <p className="text-lg leading-8 text-white/75">{item.summary}</p>
@@ -491,9 +505,8 @@ export default function Home() {
               </div>
               <div className="lg:pb-2">
                 <p className="max-w-md text-base leading-7 text-white/55">
-                  I&apos;m interested in senior engineering roles and ambitious
-                  projects across distributed systems, cloud platforms, and
-                  applied AI.
+                  I&apos;m open to thoughtful conversations about distributed
+                  systems, cloud platforms, and applied AI.
                 </p>
                 <a
                   href={`mailto:${contact.email}`}
@@ -501,6 +514,12 @@ export default function Home() {
                 >
                   Start a conversation
                   <ArrowUpRight className="size-5" />
+                </a>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="mt-5 block break-all font-mono text-xs text-white/40 transition hover:text-lime"
+                >
+                  {contact.email}
                 </a>
               </div>
             </div>
