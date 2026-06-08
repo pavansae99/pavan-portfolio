@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pavansae99.github.io/pavan-portfolio/sitemap.xml

@@ -1,0 +1,9 @@
+{
+  "name": "Pavan Sai Lankalapalli - Portfolio",
+  "short_name": "Pavan Portfolio",
+  "description": "Senior Software Engineer specializing in distributed systems, cloud-native platforms, and Agentic AI.",
+  "start_url": "/pavan-portfolio/",
+  "display": "standalone",
+  "background_color": "#f4f5f1",
+  "theme_color": "#f4f5f1"
+}
