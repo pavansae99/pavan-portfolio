@@ -369,15 +369,18 @@ export default function Home() {
                   <p className="mt-1 font-semibold">AI Job Search Agent</p>
                 </div>
               </div>
-              <div
-                aria-label="GitHub repository link placeholder"
-                className="flex items-center gap-3 rounded-full border border-dashed border-ink/20 bg-paper px-4 py-2 text-ink/55"
+              <a
+                href="https://github.com/pavansae99/agentic-ai-job-search-assistant"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View GitHub repository for AI Job Search Agent"
+                className="inline-flex items-center gap-3 rounded-full border border-dashed border-ink/20 bg-paper px-4 py-2 text-ink/75 transition hover:border-ink/40 hover:text-ink"
               >
                 <Github className="size-4" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.12em]">
-                  Repository link · Coming soon
+                  View repository
                 </span>
-              </div>
+              </a>
             </div>
           </Reveal>
 
